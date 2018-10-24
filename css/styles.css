@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'open_sans';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff')  
+}
+
+
+
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff');     
+}
+
+body {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+h2 {
+  font-size: 46px;
+  color: #02918c;
+  font-family: open_sansbold , Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.text-style {
+  color: #7e8287;
+  font-family: open_sans, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*main menu*/
+
+.header-top {
+  height: 62px;
+  background-color: #02918c;
+  text-align: center;
+  overflow: hidden;
+}
+
+.content {
+  display: inline-block;
+  width: 1280px;
+}
+
+.content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.logo {
+  margin: 18px 0 0 49px;
+  float: left;
+}
+
+.logo img {
+  width: 124px;
+  height: 20px;
+}
+
+.logo img:hover {
+  border: 1px solid yellow;
+}
+
+.menu {
+  margin: 25px 47px 0 0; 
+  float: right;
+  line-height: 9px;
+  letter-spacing: 0.1px;
+}
+
+.menu li {
+  display: inline-block; 
+  font-family: open_sansbold , Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 9px;
+  padding-right: 45px;
+}
+
+.menu li:last-child {
+  padding-right: 0; 
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+}
+li a:hover{
+  background: blue;
+}
+
+/*photo with the text*/
+
+.pic-background {
+  background: url(../images/background.jpg) no-repeat;
+  min-height: 728px;
+  text-align: center;
+  background-size: cover;
+}
+
+.text-background {
+  position: relative;
+  display: inline-block;
+  margin-top: 210px;
+  font-family: open_sans, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+  /*bracket*/
+
+.text-background:after {
+  display: inline-block;
+  content: "";
+  background: url(../images/bracket.png) no-repeat;
+  width: 108px;
+  height: 26px;
+  margin-top: 51px;
+}
+
+
+/*text*/
+
+.text-middle {
+  font-family: open_sans, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  word-spacing: 0.045em;
+}
+
+ .text-big {
+  font-family: open_sansbold , Arial, sans-serif;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 89px;
+  text-transform: uppercase;
+  letter-spacing: 0.328em;
+}
+
+.text-small {
+  font-family: open_sans, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/*button*/
+
+.from-button button {
+  width: 196px;
+  height: 47px;
+  background-color: #cfc91d;
+  font-family: open_sansbold , Arial, sans-serif;
+  color: #0b1016;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 46px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.from-button button:hover {
+  background: blue;
+}
+
+/*block about me and column*/
+
+.block-about {
+  text-align: center;
+  padding: 78px 0 148px 0;
+}
+
+.line-about:before {
+  content: "~~~~~~~~ :: ~~~~~~~~";
+}
+
+.line-about {
+  padding-top: 13px;
+  padding-bottom: 17px;
+}
+
+.about p {
+  display: inline-block;
+  width: 874px;
+  line-height: 41px;
+}
+
+.about strong {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.sprite {
+  background-image: url(../images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+.sprite-lamp {
+  width: 31px;
+  height: 33px;
+  background-position: 0 0;
+}
+
+.sprite-pencil {
+  width: 32px;
+  height: 32px;
+  background-position: -31px 0;
+}
+
+.sprite-gear {
+  width: 32px;
+  height: 32px;
+  background-position: -63px 0;
+}
+
+.sprite-laptop {
+  width: 32px;
+  height: 23px;
+  background-position: -95px 0;
+}
+
+/*column*/
+
+.column-box {
+  font-size: 0;
+  padding-top: 67px;
+}
+
+.column {
+  display: inline-block;
+  width: 22%;
+  padding-top: 35px;
+}
+
+.title {
+  padding-top: 30px;
+  padding-bottom: 22px;
+  font-weight: 700;
+}
+
+.style-column {
+  font-size: 11px;
+  width: 161px;
+  margin: 0 auto;
+  line-height: 21px;
+}
+
+/*block "services"*/
+
+.services {
+  width: 100%;
+}
+
+.box-services {
+  font-size: 0;
+  width: 100%;
+}
+
+.box {
+  display: inline-block;
+  background-color: #f0f0e8;
+  vertical-align: top;
+  text-align: left;
+  width: 50%;
+  min-height: 727px;
+}
+
+.box-menu {
+  display: inline-block;
+  width: 78%;
+  margin: 72px 0 31px 94px;
+}
+
+.box-menu h2 {
+  line-height: 38px;
+}
+
+.line-services {
+  padding-top: 39px;
+  font-size: 16px;
+}
+
+.line-services:before {
+  content: "~~~~~ :: ~~~~~";
+}
+
+.text-services {
+  line-height: 39px;
+  padding-top: 12px;
+}
+
+.column-box-services {
+  font-size: 0;
+  padding-top: 47px;
+}
+
+.title-services {
+  padding: 16px 0 12px 0;
+  font-weight: 700;
+}
+
+.column-services {
+  display: inline-block;
+  width: 35%;
+  margin-right: 104px;
+  margin-bottom: 50px;
+}
+
+.space {
+  margin-right: 0;
+}
+
+.style-services {
+  display: inline-block;
+  line-height: 21px;
+  font-size: 11px;
+}
+
+.sprite-services {
+    background-image: url(../images/services.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-globe {
+    width: 28px;
+    height: 33px;
+    background-position: 0 0;
+}
+
+.sprite-search {
+    width: 32px;
+    height: 32px;
+    background-position: -28px 0;
+}
+
+.sprite-time {
+    width: 32px;
+    height: 33px;
+    background-position: -60px 0;
+}
+
+.sprite-table {
+    width: 30px;
+    height: 32px;
+    background-position: -92px 0;
+}
+
+.box-pic {
+  display: inline-block;
+  background: url(../images/piano.jpg) no-repeat;
+  min-width: 619px;
+  min-height: 727px;
+  vertical-align: top;
+  background-size: cover;
+}
+
+/*block "my work" and "contact me"*/
+
+.work {
+  text-align: center;
+  padding: 92px 0 69px 0;
+}
+
+.line-work, .line-contact {
+  padding: 16px 0 0 0;
+}
+
+.text-work, .text-contact {
+  display: inline-block;
+  padding: 9px 0 0 0;
+  width: 677px;
+  line-height: 41px;
+}
+
+/*block foto*/
+
+.box-photo {
+  font-size: 0;
+}
+
+.photo {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  max-height: 237px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.background-photo {
+  position: absolute;
+  display: none;
+  background-color: rgba(17, 133, 127, 0.85);
+  color: white;
+  top: 21px;
+  left: 27px;
+  right: 27px;
+}
+
+.background-text {
+  width: 72%;
+  display: inline-block;
+}
+
+.title-photo {
+  color: white;
+  padding-top: 55px;
+  font-weight: 700;
+}
+
+.style-photo {
+  padding: 10px 0 46px 0;
+  font-size: 13px;
+  color: white;
+  line-height: 21px;
+}
+
+.photo:hover .background-photo {
+  display: block;
+}
+
+/*block "contact me*/
+
+.contact {
+  text-align: center;
+  padding: 82px 0 60px 0;
+}
+
+/*block "check in"*/
+
+.registration {
+  background-color: #0b0b0b;
+}
+
+.form-check {
+  text-align: center;
+}
+
+.form-check input {
+  border: none;
+  text-align: center;
+  background-color: #0b0b0b;
+  text-transform: uppercase;
+  padding-top: 56px;
+  line-height: 41px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.line-form {
+  border: 1px solid #898989;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.form-button button {
+  background-color: #cfc91d;
+  border: none;
+  width: 196px;
+  height: 47px;
+  font-family: open_sansbold, Arial, sans-serif;  
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 54px 0 70px 0;
+}
+
+.form-button button:hover {
+  background: blue;
+}
+
+/*footer "myfolio"*/
+
+.myfolio {
+  text-align: center;
+  background-color: #000000;
+  padding: 27px 0 27px 0;
+}
